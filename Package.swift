@@ -8,22 +8,12 @@ let package = Package(
         .macOS(.v10_12)
     ],
     products: [
-        .library(
-            name: "GridIOS",
-            targets: ["GridIOS"]
-        ),
+        .library(name: "GridIOS", targets: ["GridIOS"])
     ],
     targets: [
         .target(
             name: "GridIOS",
-            path: "Sources/GridIOS",
-            publicHeadersPath: ".",
-            cSettings: [
-                .headerSearchPath("."),
-                .headerSearchPath("features"),
-                .headerSearchPath("tile"),
-                .headerSearchPath("property")
-            ]
+            path: "Sources/GridIOS"
         )
     ]
 )
